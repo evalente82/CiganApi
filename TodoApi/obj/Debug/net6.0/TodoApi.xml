@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TodoApi</name>
+    </assembly>
+    <members>
+        <member name="M:TodoApi.Controllers.TodoItemsController.GetListaItems">
+            <summary>
+            Busca todas as tarefas existentes.
+            </summary>
+        </member>
+        <member name="M:TodoApi.Controllers.TodoItemsController.GetListaItem(System.Int64)">
+            <summary>
+            Busca uma tarefa selecionada pelo Codigo.
+            </summary>
+        </member>
+        <member name="M:TodoApi.Controllers.TodoItemsController.UpdateListaItem(System.Int64,TodoApi.DTO.DTO_ListaItems)">
+            <summary>
+            Altera a tarefa selecionada pelo Codigo.
+            </summary>
+        </member>
+        <member name="M:TodoApi.Controllers.TodoItemsController.CreateListaItem(TodoApi.DTO.DTO_ListaItems)">
+             <summary>
+             Criação da tarefa para ser feita.
+             </summary>
+             <param name="todoItemDTO"></param>
+             <returns>A nova Tarefa foi criada com sucesso!</returns>
+             <remarks>
+             Sample request:
+            
+                 {
+                    "descricao": "Comprar um mouse",
+                    "status": P
+                 }
+            
+             </remarks>
+             <response code="201">Retorna o novo item criado</response>
+             <response code="400">Se o item estiver nulo</response>
+        </member>
+        <member name="M:TodoApi.Controllers.TodoItemsController.DeleteListaItem(System.Int64)">
+            <summary>
+            Deleta uma tarefa especifica de acordo com o código.
+            </summary>
+            <param name="codigo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
